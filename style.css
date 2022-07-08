@@ -1,3 +1,17 @@
 body{
-    background-image: linear-gradient(top to bottom, #f3b068, #ffffff);
-    }
+    height: 97vh;
+    background: linear-gradient(180deg, #f3b068, #ffffff);
+    background-repeat: no-repeat;
+}
+.Nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Nav a {
+    text-decoration: none;
+    color: white;
+}
+footer {
+    display: block;
+    margin-top: 10px;
+}
