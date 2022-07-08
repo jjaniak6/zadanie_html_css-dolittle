@@ -7,16 +7,22 @@ body{
 
 }
 
-.Header{
+/* header */
+
+header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .Nav{
-    display: flexbox;
-    justify-items: space-between;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 30px;
+    padding-right: 25px;
 }
 .Nav a {
+    font-size: 12px;
     text-decoration: none;
     color: white;
 }
@@ -92,6 +98,6 @@ footer ul{
     font-size: 30px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 14px;
     padding-right: 25px;
 }
