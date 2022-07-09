@@ -1,14 +1,15 @@
 body{
     height: 97vh;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Section1{
     background: linear-gradient(180deg, rgb(251,173,128), #ffffff);
     background-repeat: no-repeat;
-    font-family: 'Open Sans', sans-serif;
-
 }
 
 /* header */
-
 header{
     display: flex;
     flex-direction: row;
@@ -21,60 +22,93 @@ header{
     grid-column-gap: 30px;
     padding-right: 25px;
 }
-.Nav a {
+.Nav a{
     font-size: 12px;
     text-decoration: none;
     color: white;
 }
-.Nav a:active, a:hover{
-    text-decoration: underline;
+.Nav a:active, a:hover, a:visited{
+    text-decoration: underline
 }
 
-.Email {
-    appearance: auto;
-    
+
+.Section2{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
+.Title{
+    font-size: 1.4em;
+}
+
 .Email input{
     display: inline-block;
     padding: 6px;
     border-radius: 8px;
-    box-shadow: rgb(255, 255, 255);
+    box-shadow: 0px 2px rgb(181, 177, 177);
+    border: 0.2px solid  rgb(181, 177, 177);
 }
 .Email input[type="email"]{
     box-sizing: border-box; 
     background-color: white;
-    /* -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    border: dimgray */
 }
 
 .Email input[type="submit"]{
     background-color: rgb(251,173,128);
     color: #ffffff;
-    /* padding: 6px; */
+}
+.Cooking_img{
+    mix-blend-mode: multiply;
 }
 
 /* menu */
 .Menu{
     display: grid;
-    /* align-content: center;
-    justify-content: center; */
+    align-content: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr; 
     background-color: #ffffff;
     grid-row-gap: 40px;
     grid-column-gap: 40px;
- 
-
-
+    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-.Menu button{
+.Menu input{
+    border-style: solid;
     border-radius: 12px;
-    width: 40vw;
-    height: 160px;
+    width: 220px;
+    height: 120px; 
     background-color: #ffffff;
-    /* box-shadow: black;
-    border: black; */
-
+    justify-self: center ;
+    box-shadow: 0px 2px rgb(181, 177, 177);
+    border: 0.2px solid  rgb(181, 177, 177);
 }
+
+/* Trending */
+
+.Trending{
+    background-color: rgb(251,173,128);
+    color: #ffffff;
+    display: grid;
+}
+.Trending_img{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.Trending_img input{
+    border-radius: 12px;
+    height: 80%;
+}
+
+/* .Pumpkin:hover{
+     border: 1px solid black;
+} */
 
 /* footer */
 footer {
@@ -86,12 +120,11 @@ footer {
     justify-content: space-between;
     align-content: center;
     width: 100%;
-    height: 40px;
+    height: 20px;
 }
-
 footer p{
     font-size: 12px;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 footer ul{
     list-style: none;
@@ -100,4 +133,5 @@ footer ul{
     grid-template-columns: repeat(4,1fr);
     grid-column-gap: 14px;
     padding-right: 25px;
+    align-content: center;
 }
