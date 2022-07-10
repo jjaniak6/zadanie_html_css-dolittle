@@ -10,84 +10,91 @@ body{
 }
 
 /* header */
+
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 header img{
-    margin-left: 10px;
+    margin-left: 4vw;
+    width: 100px;
 }
 .Nav{
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-column-gap: 30px;
-    padding-right: 25px;
+    display: flex;
+    justify-content: space-between;
 }
 .Nav a{
+    display: grid;
     font-size: 14px;
     text-decoration: none;
     color: white;
+    grid-template-columns: repeat(2,1fr);
+
 }
 .Nav a:active, a:hover, a:visited{
     text-decoration: underline
 }
-
 
 .Section2{
     display: flex;
     justify-content: space-evenly;
 }
 .Subsection2{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
 }
 .Title{
-    font-size: 20px;
+    font-size: 4.4vw;
     color: rgb(47, 48, 67);
 }
 .Heading{
-    font-size: 14px;
+    font-size: 2.8vw;
     color: rgb(47, 48, 67);
+    padding-bottom: 3vw;
 }
-
 .Email input{
     display: inline-block;
-    padding: 6px;
     border-radius: 8px;
     box-shadow: 0px 2px rgb(181, 177, 177);
 }
 .Email input[type="email"]{
+    font-size: 2vw;
+    width: 26vw;
+    height: 4vw;
     box-sizing: border-box; 
     background-color: white;
     border: 0.2px solid  rgb(181, 177, 177);
 }
-
 .Email input[type="submit"]{
+    font-size: 2vw;
+    width: 12vw;
+    height: 4vw;
     background-color: rgb(251,173,128);
     color: #ffffff;
     border: 0.2px solid  rgb(181, 177, 177);
 }
 .Cooking_img{
     mix-blend-mode: multiply;
+    width: 30vw;
 }
 
 /* menu */
+
 .Menu{
     height: 40vw;
     display: grid;
     align-content: center;
-    align-items: center;
     grid-template-columns: 1fr 1fr; 
     background-color: #ffffff;
-    grid-row-gap: 6vh;
-    grid-column-gap: 4vw;
-    margin: 2vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    grid-row-gap: 6vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
 }
 .Menu input{
     border-style: solid;
@@ -100,7 +107,6 @@ header img{
     border: 0.2px solid  rgb(181, 177, 177);
 }
 
-
 /* Trending */
 
 .Trending{
@@ -109,11 +115,13 @@ header img{
     display: grid;
     height: 40vw;
     padding-bottom: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 .Trending heading{
     margin-left: 4vw;
     padding: 2vw 2vw 2vw;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 .Trending_img{
     list-style: none;
