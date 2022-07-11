@@ -20,7 +20,7 @@ header{
 }
 header img{
     margin-left: 4vw;
-    width: 100px;
+    width: 140px;
 }
 .Nav{
     list-style: none;
@@ -28,14 +28,21 @@ header img{
     justify-content: space-between;
 }
 .Nav a{
-    display: grid;
+    display: inline-block;
     font-size: 14px;
-    text-decoration: none;
     color: white;
-    grid-template-columns: repeat(2,1fr);
-
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
-.Nav a:active, a:hover, a:visited{
+
+.navig{
+    text-decoration: none;
+}
+.navig:hover{
+    text-decoration: underline
+}
+
+.navig_active{
     text-decoration: underline
 }
 
@@ -135,7 +142,9 @@ header img{
     height: 30vw;
     width: 20vw;
 }
-
+.Trending_img input:hover{
+    filter: brightness(60%);
+}
 /* .Pumpkin:hover{
      border: 1px solid black;
 } */
